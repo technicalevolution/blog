@@ -7,7 +7,3 @@ header-includes:
     <meta name="description" content="My description" />
 ...
 
-[About](about.html)
-
-[HTB](htb/htb.html)
-    
