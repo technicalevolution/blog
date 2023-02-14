@@ -58,27 +58,18 @@ $if(date)$
 $endif$
 </header>
 $endif$
-$if(toc)$
+<div align="center">
 <nav id="$idprefix$TOC">
-	<a href="/">Home</a>
-		|
-	<a href="/about.html">About</a>
-		| 
-	<a href="https://github.com/technicalevolution">Github</a>
-$table-of-contents$
+	<a href="/">home</a>
+	 |
+	<a href="/about.html">whoami</a>
+	 |
+	<a href="https://github.com/technicalevolution" target="_blank" rel="nofollow">github</a>
+	 |
+	<a href="" target="_blank" rel="nofollow">twitter</a>
 </nav>
-$endif$
-<nav id="$idprefix$TOC">
-	<div align="center">
-	<a href="">Home</a>
-		|
-		<a href="">About</a>
-		| 
-		<a href="">Github</a>
-	</div>
-$table-of-contents$
-</nav>
-
+</div>
+<hr>
 $body$
 $for(include-after)$
 $include-after$
