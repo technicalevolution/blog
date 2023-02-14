@@ -43,8 +43,10 @@ $for(include-before)$
 $include-before$
 $endfor$
 $if(title)$
+<div align="center">
 <header id="title-block-header">
 <h1 class="title">$title$</h1>
+</div>
 $if(subtitle)$
 <p class="subtitle">$subtitle$</p>
 $endif$
@@ -58,9 +60,25 @@ $endif$
 $endif$
 $if(toc)$
 <nav id="$idprefix$TOC">
+	<a href="">Home</a>
+		|
+		<a href="">About</a>
+		| 
+		<a href="">Github</a>
 $table-of-contents$
 </nav>
 $endif$
+<nav id="$idprefix$TOC">
+	<div align="center">
+	<a href="">Home</a>
+		|
+		<a href="">About</a>
+		| 
+		<a href="">Github</a>
+	</div>
+$table-of-contents$
+</nav>
+
 $body$
 $for(include-after)$
 $include-after$
