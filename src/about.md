@@ -1,6 +1,7 @@
 ---
 title: techevo's blog
 pagetitle: "techevo | about"
+css: css/retro.css
 date: 2022-02-14
 header-includes:
     <meta name="keywords" content="Foo,Bar" />
