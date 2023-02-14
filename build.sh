@@ -4,11 +4,11 @@
 set -eu
 
 # Define some constant variables
-TEMPLATE="./template.html"
+TEMPLATE="templates/template.html"
 SRC="./src"
 SITE="./site/"
 CSS="css/retro.css"
-PANDOC="pandoc -f markdown -t html --template $TEMPLATE -V css=${CSS}"
+PANDOC="pandoc -f markdown -t html --template $TEMPLATE"
 
 # Clear the current local site build if there is one.
 if [ -d $SITE ]; then 
@@ -35,5 +35,6 @@ done
 
 cp -r css site/css
 cp -r img site/img
+cp favicon.ico site/favicon.ico
 
 firefox site/index.html
